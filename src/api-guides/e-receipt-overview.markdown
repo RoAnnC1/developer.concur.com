@@ -3,7 +3,7 @@ title: E-Receipts App Overview
 layout: reference
 ---
 
-## SAP Concur sets up Sandboxes, registers a development App, & an App Center Listing
+## SAP Concur Sets Up Sandboxes, Registers a Development App, & an App Center Listing
 
 This App will be your development App. During the Development phase, you will be provided with:
 * Development App: includes the `client_id` and `client_secret` (only applicable to select sandboxes) AND (after certification)
@@ -13,7 +13,7 @@ This App will be your development App. During the Development phase, you will be
 
 Ensure these app credentials are stored securely and completely separate from each other to avoid mixing the IDs and Secrets. You will continue to use the development app with your Sandboxes for ongoing troubleshooting related to Support ticket resolution. This development app can also be used for future development as APIs are updated and/or released.
 
-## Partner develops App Center and Partner-side connection Flows using OAuth2
+## Partner Develops App Center and Partner-side Connection Flows Using OAuth2
 
 ### Partner: Develops Connection Flows
 
@@ -58,7 +58,7 @@ Decode the `id_token` to obtain the sub value and store this value as the user i
 
 Partner is required to create a landing web page (aka re-direct) for this flow. This page must be hosted at the URI specified by the Partner in their App Center listing in SAP Concur T&E. Read the [App Center User Experience Guidelines](https://developer.concur.com/manage-apps/go-market-docs/app-center-ux-guidelines-enterprise.html).
 
-### Token API request and response
+### Token API Request and Response
 
 REQUEST
 
@@ -108,7 +108,7 @@ RESPONSE
 }
 ```
 
-### SAP Concur App Center Flow (Password Grant) - Technical Overview - API request & response
+### SAP Concur App Center Flow (Password Grant) - Technical Overview - API Request & Response
 
 Data Center awareness must be part of your App. SAP Concur has multiple DCs and your App must be able to switch API endpoints based on the Token's stored geolocation in your db.
 
@@ -118,7 +118,7 @@ Data Center awareness must be part of your App. SAP Concur has multiple DCs and 
 
 China requires a separate App ID and Secret
 
-See more at: https://developer.concur.com/api-reference/authentication/apidoc.html\#base_uri
+See more at: https://developer.concur.com/api-reference/authentication/apidoc.html#base_uri
 
 Log the SAP Concur Correlation ID of each API transaction that generates an error for faster Support ticket troubleshooting. Include this ID in any Support ticket that you need to submit.
 
@@ -148,11 +148,11 @@ User-Level Authentication Technical Overview:
 
 Decode the `id_token` to obtain the sub value and store this value as the user id (see https://jwt.io). The user id will be used to post receipts to the user’s SAP Concur account.
 
-[Authorization Grant]( https://developer.concur.com/api-reference/authentication/apidoc.html\#auth_grant)
+[Authorization Grant]( https://developer.concur.com/api-reference/authentication/apidoc.html#auth_grant)
 
-### SAP Concur Auth Grant - Technical Overview API request & response
+### SAP Concur Auth Grant - Technical Overview API Request & Response
 
-#### Two API requests & responses
+#### Two API Requests & Responses
 
 REQUEST \#1:
 
@@ -205,7 +205,7 @@ Data Center awareness must be part of your App. SAP Concur has multiple DCs and 
 
 China requires a separate App ID and Secret.
 
-See more at: https://developer.concur.com/api-reference/authentication/apidoc.html\#base_uri
+See more at: https://developer.concur.com/api-reference/authentication/apidoc.html#base_uri
 
 Log the SAP Concur Correlation ID of each API transaction that generates an error for faster Support ticket troubleshooting. Include this ID in any Support ticket that you need to submit.
 
@@ -238,7 +238,7 @@ Decode the id_token to obtain the sub value and store this value as the user id 
 
 ### SAP Concur OTP Grant - Technical Overview API Request & Response
 
-#### Two API requests & responses
+#### Two API Requests & Responses
 
 REQUEST \#1:
 
@@ -292,13 +292,13 @@ Data Center awareness must be part of your App. SAP Concur has multiple DCs and 
 
 China requires a separate App ID and Secret.
 
-See more at: https://developer.concur.com/api-reference/authentication/apidoc.html\#base_uri
+See more at: https://developer.concur.com/api-reference/authentication/apidoc.html#base_uri
 
 Log the SAP Concur Correlation ID of each API transaction that generates an error for faster Support ticket troubleshooting. Include this ID in any Support ticket that you need to submit.
 
 Please refer to the [Receipts Recipe](https://developer.concur.com/api-guides/e-receipts.html) document for more API details
 
-## Partner: Test app end-to-end, including logging
+## Partner: Test App End-to-End
 
 Testing must include:
 

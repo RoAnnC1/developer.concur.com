@@ -30,13 +30,13 @@ Partner makes API call to exchange the ID and request token to obtain a Company 
 
 The App Listing confirms to the user that the accounts are linked
 
-![Company-level authentican process](/src/api-guides/images/entoverview-company-level-auth.png)
+![Company-level authentication process](/src/api-guides/images/entoverview-company-level-auth.png)
 
 ### SAP Concur App Center Flow Technical Overview
 
 Partner is required to create a landing web page (aka re-direct). Read the [App Center User Experience Guidelines](https://developer.concur.com/manage-apps/go-market-docs/app-center-ux-guidelines-enterprise.html). This page must be hosted at the URI specified by the Partner. SAP Concur will then reference this URI in the App Center listing. This listing is setup by SAP Concur.
 
-### Token API request and response
+### Token API Request and Response
 
 REQUEST
 
@@ -98,7 +98,7 @@ See more at:
 
 Log the SAP Concur Correlation ID of each API transaction that generates an error. This will enable you to include this ID value when submitting a Support ticket. Our Support team will then find that corresponding value in our logs. This process will expedite Support ticket resolution.
 
-## Partner Includes the Company Info API in their app
+## Partner Includes the Company Info API in Their App
 
 Benefits of the SAP Concur Company Info API:
 
@@ -120,7 +120,7 @@ The Partner app must record the SAP Concur Correlation ID of each API transactio
 
 <https://developer.concur.com/api-reference/profile-beta/company.html>
 
-## Partner: Test app end-to-end, including logging
+## Partner: Test App End-to-End
 
 Testing must include:
 
