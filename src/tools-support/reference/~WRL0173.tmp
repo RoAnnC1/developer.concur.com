@@ -10,8 +10,7 @@ entity resides. The APIs will work with all entities, but to specify which you
 are trying to work with you must make a change to the end point declaration
 before you make your API call. There will be a different domain for each of the
 following locations: Production, Implementation (copy of the product environment
-not available for all clients), EMEA (the European data center), and the China
-data center.
+not available for all clients), and EMEA (the European data center).
 
 | Environment    | URI                                          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |----------------|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
