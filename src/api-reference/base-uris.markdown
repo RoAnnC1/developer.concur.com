@@ -13,7 +13,7 @@ This platform allows SAP Concur to host entities that are physically closer to a
 
 |Environment|URI|Description|
 |---|---|---|
-|North American|https://us.api.concursolutions.com|Default for all API calls for client entities in North America.|
+|North America|https://us.api.concursolutions.com|Default for all API calls for client entities in North America.|
 |EMEA|https://emea.api.concursolutions.com|Default for all API calls for client entities in throughout Europe.|
 |China|https://cn.api.concurcdc.cn|Default for all API calls for client entities in China.|
 
@@ -47,7 +47,7 @@ These URIs support the current authentication and the previous authentication si
 
 ## Authentication Geolocation URIs
 
-The full list of available token geolocations:
+Applying the above base URI locations, below are the endpoints a developer would use to access our [authentication API](/authentication/apidoc.html)
 
 |Environment|URI|Description|
 |---|---|---|
