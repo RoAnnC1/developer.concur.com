@@ -47,7 +47,7 @@ These URIs support the current authentication and the previous authentication si
 
 ## Authentication Geolocation URIs
 
-Applying the above base URI locations, below are the endpoints a developer would use to access our [authentication API](/authentication/apidoc.html)
+Applying the above base URI locations, below are the endpoints a developer would use to access the [authentication API](/authentication/apidoc.html).
 
 |Environment|URI|Description|
 |---|---|---|
