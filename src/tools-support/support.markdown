@@ -6,7 +6,7 @@ redirect_from:
   - /docs-and-resources/support/index.html
 ---
 
-[Service Status](https://open.concur.com)
+## [Service Status](https://open.concur.com)
 
 ## Support Scenarios
 
