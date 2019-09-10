@@ -14,6 +14,8 @@ This  will be your Development App. During the Development phase, you will be pr
 
 Ensure these app credentials are stored securely and completely separate from each other to avoid mixing the IDs and Secrets. You will continue to use the Development app with your Sandbox(es) for ongoing troubleshooting related to Support ticket resolution. This Development app can also be used for future development as APIs are updated and/or released.
 
+![Process flow](/src/api-guides/images/enterprise-1.png)
+
 ## Partner Develops to the SAP Concur App Center Flow using OAuth2
 
 On the SAP Concur App Center page, only Company Admins can connect to your listing. The button is grayed out, otherwise.
@@ -30,7 +32,7 @@ Partner makes API call to exchange the ID and request token to obtain a Company 
 
 The App Listing confirms to the user that the accounts are linked
 
-![Company-level authentication process](/src/api-guides/images/entoverview-company-level-auth.png)
+![Company-level authentication process](/src/api-guides/images/company-level-authentication.png)
 
 ### SAP Concur App Center Flow Technical Overview
 
@@ -133,7 +135,7 @@ Testing must include:
 * Test Logging (required to pass Certification)
   * Correlation ID: Some legacy APIs may not provide a Correlation ID. For any API that does, log it. Include this whenever submitting a Support ticket example of the correlation ID:
 
-![Example of correlation ID](/src/api-guides/images/entoverview-correlationid-sample.PNG)
+![Example of correlation ID](/src/api-guides/images/correlationid-sample.png)
 
 ## SAP Concur & Partner: Post DEV Testing, Certification & Support
 
@@ -167,3 +169,5 @@ To ensure your integration has the highest added value for our mutual customers 
 ## Production
 
 After certification the client Admin connects to the app from the App Center. The Partner uses the new Auth service to gain Access Token and call Company API to store all the relevant data. Client and Partner begin to use Partner App.
+
+![Post certification process](/src/api-guides/images/enterprise-2.png)

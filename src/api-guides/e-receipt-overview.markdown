@@ -13,6 +13,8 @@ This App will be your development App. During the Development phase, you will be
 
 Ensure these app credentials are stored securely and completely separate from each other to avoid mixing the IDs and Secrets. You will continue to use the development app with your Sandboxes for ongoing troubleshooting related to Support ticket resolution. This development app can also be used for future development as APIs are updated and/or released.
 
+![Process flow](/src/api-guides/images/user-flow.png)
+
 ## Partner Develops App Center and Partner-side Connection Flows Using OAuth2
 
 ### Partner: Develops Connection Flows
@@ -33,7 +35,7 @@ Please refer to the [Receipts Recipe](https://developer.concur.com/api-guides/e-
 
 ### Password Grant Flow
 
-![Password grant flow](/src/api-guides/images/e-receipts-password-grant-flow.png)
+![Password grant flow](/src/api-guides/images/password-grant.png)
 
 1. Clicks on 'Connect' on the App Center Page
 2. Verifies User
@@ -126,7 +128,7 @@ Log the SAP Concur Correlation ID of each API transaction that generates an erro
 
 User-Level Authentication Technical Overview:
 
-![Authorization grant flow](/src/api-guides/images/e-receipts-authorization-grant-flow.png)
+![Authorization grant flow](/src/api-guides/images/authorization-grant.png)
 
 1. Clicks **Connect** on the Partner's Page.
 2. Partner calls Auth Service.
@@ -215,7 +217,7 @@ Please refer to the [Receipts Recipe](https://developer.concur.com/api-guides/e-
 
 ### One Time Password Grant flow
 
-![One time password grant flow](/src/api-guides/images/e-receipts-one-time-password-grant-flow.png)
+![One time password grant flow](/src/api-guides/images/one-time-password-grant.png)
 
 1. User enters their email address within the Partner’s website/mobile App.
 2. Partner app makes a call to the SAP Concur Authorization service to trigger the OTP email using OTP grant.
@@ -310,7 +312,7 @@ Testing must include:
 * Test Logging (required to pass Certification)
   * Correlation ID: Include this whenever submitting a Support ticket example of the correlation ID:
 
-![Sample correlation ID](/src/api-guides/images/entoverview-correlationid-sample.png)
+![Sample correlation ID](/src/api-guides/images/correlationid-sample.png)
 
 ## SAP Concur & Partner: Post DEV Testing, Certification, & Support
 
