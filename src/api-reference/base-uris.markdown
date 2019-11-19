@@ -9,27 +9,33 @@ The Base URI (also known as the Instance URL) is the domain where the SAP Concur
 
 ### Production
 
-This platform allows SAP Concur to host entities that are physically closer to a client’s location than other SAP Concur approved data centers.
+Concur customer entites are hosted in various locations based on the client location, government regulations and other special requirements. As a result, the correct Base URL must be used to reach a particular entity.
 
-|Environment|URI|Description|
-|---|---|---|
-|North America|https://us.api.concursolutions.com|Default for all API calls for client entities in North America.|
-|EMEA|https://emea.api.concursolutions.com|Default for all API calls for client entities in throughout Europe.|
-|China|https://cn.api.concurcdc.cn|Default for all API calls for client entities in China.|
+|Data Center|Environment|Base URI|Description|
+|-----------|-----------|--------|-----------|
+|US|Production|https://us.api.concursolutions.com |Default for all API calls (Optionally request certs)|
+|US|Production|https://www-us.api.concursolutions.com |Default for all API calls (Does not request certs)|
+|EMEA|Production|https://emea.api.concursolutions.com |Default for all API calls (Optionally request certs)|
+|EMEA|Production|https://www-emea.api.concursolutions.com |Default for all API calls (Does not request certs)|
+|China|Production|https://cn.api.concurcdc.cn |Default for all API calls (Optionally request certs)|
+|China|Production|https://www-cn.api.concurcdc.cn |Default for all API calls (Does not request certs)|
+|PSCC|Production|https://usg.api.concursolutions.com |Default for all API calls (Optionally request certs)|
+|PSCC|Production|https://www-usg.api.concursolutions.com |Default for all API calls (Does not request certs)|
 
 ### Implementation
 
 The implementation base domains are used for implementation sites. An implementation site is a copy of an SAP Concur entity made from a backup of a client’s production site. This feature is only available for the Professional and Premium editions of SAP Concur. Clients have the option to have a permanent implementation site established, contact your Client Executive or Account Manager for details.
 
-|Environment|URI|Description|
-|---|---|---|
-|North America|https://us-impl.api.concursolutions.com|This domain is used for API calls to client implementation sites that reside on the North America platform.|
-|EMEA|https://emea-impl.api.concursolutions.com|This domain is used for API calls to client implementation sites that reside on the EMEA platform.|
-|China|https://implementation.concurcdc.cn|This domain is used for API calls to client implementation sites that reside on the China platform.|
+|Data Center|Environment|Base URI|Description|
+|-----------|-----------|--------|-----------|
+|US|Implementation|https://us-impl.api.concursolutions.com |Default for all API calls (Optionally request certs)|
+|US|Implementation|https://www-us-impl.api.concursolutions.com |Default for all API calls (Does not request certs)|
+|EMEA|Implementation|https://emea-impl.api.concursolutions.com |Default for all API calls (Optionally request certs)|
+|EMEA|Implementation|https://www-emea-impl.api.concursolutions.com |Default for all API calls (Does not request certs)|
 
-### Pre-2017 Authentication (deprecated)
+### Pre-2017 Legacy URIs (deprecated)
 
-The following base URIs can be used for client that are authenticating against our previous [Authentication method](/authentication/authorization-pre-2017.html).
+The following base URIs have be used for APIs that are authenticating using the legacy [Authentication method](/authentication/authorization-pre-2017.html). The new base URIs have been adapted to become backwards compaitable with the Legacy Authentication methods. As such, these legacy base URIs should not be used unless necessary. JWT calls are not compatible with the legacy base URIs.
 
 To migrate to the current authentication method, review these resources:
 
@@ -38,25 +44,9 @@ To migrate to the current authentication method, review these resources:
 
 These URIs support the current authentication and the previous authentication simultaneously.
 
-|Environment|URI|Description|
-|---|---|---|
-|North America Production|https://www.concursolutions.com|This domain is used for API calls to client production sites that reside on the North America platform.|
-|EMEA Production|https://eu1.concursolutions.com|This domain is used for API calls to client production sites that reside on the EMEA platform.|
-|North America Implementation|https://implementation.concursolutions.com|This domain is used for API calls to client implementation sites that reside on the North America platform.|
-|EMEA Production|https://eu1imp.concursolutions.com|This domain is used for API calls to client implementation sites that reside on the EMEA platform.|
-
-## Authentication Geolocation URIs
-
-Applying the above base URI locations, below are the endpoints a developer would use to access the [authentication API](/authentication/apidoc.html).
-
-|Environment|URI|Description|
-|---|---|---|
-|North America Production|https://us.api.concursolutions.com/oauth2/v0|Default for all API calls for client entities in the North America.|
-|EU Production|https://emea.api.concursolutions.com/oauth2/v0|Default for all API calls for client entities in Europe.|
-|China Production|https://cn.api.concurcdc.cn/oauth2/v0|Default for all API calls for all client entities in China.|
-|WWW-US Production|https://www-us.api.concursolutions.com/oauth2/v0|Used by browsers during Authorization Code grant.|
-|WWW-EU Production|https://www-emea.api.concursolutions.com/oauth2/v0|Used by browsers during Authorization Code grant.|
-|WWW-CN Production|https://www-cn.api.concurcdc.cn/oauth2/v0|Used by browsers during Authorization Code grant.|
-|North America Implementation|https://us-impl.api.concursolutions.com/oauth2/v0|For customers who have Implementation entities in North America.|
-|EU Implementation|https://emea-impl.api.concursolutions.com/oauth2/v0|For customers who have Implementation entities in EMEA.|
-|China Implementation|https://implementation.concurcdc.cn|For customers who have Implementation entities in China.|
+|Data Center|Environment|Base URI|Description|
+|-----------|-----------|--------|-----------|
+|US|Production|https://www.concursolutions.com |Legacy URI for API calls using pre-2017 authentication for production entities in North America|
+|EMEA|Production|https://eu1.concursolutions.com |Legacy URI for API calls using pre-2017 authentication for production entities in Europe|
+|US|Implementation|https://implementation.concursolutions.com |Legacy URI for API calls using pre-2017 authentication for implementation entities in North America|
+|EMEA|Implementation|https://eu1imp.concursolutions.com |Legacy URI for API calls using pre-2017 authentication for implementation entities in Europe|
